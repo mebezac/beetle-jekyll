@@ -1,0 +1,11 @@
+<article class="item column three">
+  <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+    <figure><img src="{{ site.url }}/img/{{ post.image.teaser }}" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
+    <div class="blog-excerpt">
+      <div class="blog-excerpt-inner">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt | truncate: 160 }}</p>
+      </div><!-- blog-excerpt-inner -->
+    </div><!-- blog-excerpt -->
+  </a>
+</article>

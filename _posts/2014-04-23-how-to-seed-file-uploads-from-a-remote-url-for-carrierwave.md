@@ -11,7 +11,7 @@ meta:
   dsq_thread_id: '2632974204'
 image:
   feature:
-  teaser: tealeaf-academy-logo.png
+  teaser: upload.png
   thumb:
 ---
 I recently deployed an app to Heroku. It's a Netflix clone called [MyFlix](http://www.zaccodes.com/project/myflix/). The cover art for the different videos are image files stored in an S3 bucket. The files are uploaded when an admin creates a video through the app's interface. The wonderful CarrierWave gem, in combination with the Fog gem take care of uploading the image files to S3 and associating the appropriate URLs with the Video objects.
