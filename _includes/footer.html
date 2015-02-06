@@ -27,17 +27,16 @@
           <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
         </div>
         <div class="widget meta-social column three">
-          <h4>Follow Us</h4>
+          <h4>Connect</h4>
           <ul class="inline">
-            <li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-            <li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-            <li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
+            {% if site.owner.twitter %} <li><a href="https://twitter.com/{{ site.owner.twitter }}" class="twitter-share border-box" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li> {% endif %}
+            {% if site.owner.github %} <li><a href="https://github.com/{{site.owner.github}}" class="github-share border-box" target="_blank"><i class="fa fa-github fa-lg"></i></a></li> {% endif %}
           </ul>
         </div>
       </section><!-- top-footer -->
       <section id="bottom-footer">
-        <p class="keep-left">&copy; 2014 <a href="http://mokaine.com/" alt="Mokaine Lab">Mokaine</a>. All Rights Reserved.</p>
-        <p class="keep-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+        <p class="keep-left">{{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.title }}</a> powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. All Rights Reserved.</p>
+        <p class="keep-right"></p>
       </section><!-- bottom-footer -->
     </div><!-- row-content -->
   </div><!-- row -->
