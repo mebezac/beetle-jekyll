@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ {% include head.html %}
+
+  <body class="page">
+
+    {% include navbar.html %}
+
+    <main role="main">
+      <div id="intro-wrap">
+        <div id="intro" class="preload darken more-button">
+          <div class="intro-item" style="background-image: url({{site_url}}/img/old_computer.jpg);">
+            <div class="caption">
+              <h2>Full Stack Rails Developer</h2>
+            </div><!-- caption -->
+          </div>
+        </div><!-- intro -->
+      </div><!-- intro-wrap -->
+
+      <div id="main">
+
+        <section class="row section text-light" style="background-color: #96C962;">
+          <div class="row-content buffer even clear-after">
+            <div class="section-title"><h3>Skills</h3></div>
+            <p class="centertxt">I’m a full-stack Ruby on Rails developer with real-world experience on poduction applications.<br>I love Rails and Ruby but always look for the best tool for the job and learn to use it.</p>
+            <div class="chart" data-percent="{{page.skill_1_amount}}" data-bar-color="#7ab746" data-animate="2000">
+              <div class="chart-content">
+                <div class="percent"></div>
+                <div class="chart-title">{{page.skill_1}}</div>
+              </div><!-- chart-content -->
+            </div><!-- chart -->
+            <div class="chart" data-percent="{{page.skill_2_amount}}" data-bar-color="#7ab746" data-animate="2500">
+              <div class="chart-content">
+                <div class="percent"></div>
+                <div class="chart-title">{{page.skill_2}}</div>
+              </div><!-- chart-content -->
+            </div><!-- chart -->
+            <div class="chart" data-percent="{{page.skill_3_amount}}" data-bar-color="#7ab746" data-animate="3000">
+              <div class="chart-content">
+                <div class="percent"></div>
+                <div class="chart-title">{{page.skill_3}}</div>
+              </div><!-- chart-content -->
+            </div><!-- chart -->
+          </div>
+        </section>
+
+        <section class="row section">
+          <div class="row-content buffer even clear-after">
+            <div class="timeline-label column six">
+              <h4>Work experience</h4>
+              <p>Specialties : Rails, Test Driven Development, Deployment, Heroku, Continous Integration, Refactoring.</p>
+              {% if site.owner.github %}<a class="button transparent aqua" href="https://github.com/{{site.owner.github}}" target="_blank">View Github</a>{% endif %}
+            </div><!-- timeline-label -->
+            <div class="timeline column six last">
+              <div class="year">
+                <time datetime="2015">2015</time>
+                <div class="experience">
+                  <span class="circle"></span>
+                  <div class="experience-img"><img src="{{site_url}}/img/bac.png" alt=""></div>
+                  <div class="experience-info clear-after">
+                    <h5>Bookacoach</h5>
+                    <div class="role">Lead Developer</div>
+                    <p>July 2014 – Current</p>
+                  </div><!-- experience-info -->
+                </div><!-- experience -->
+              </div><!-- year -->
+              <div class="year">
+                <time datetime="2014">2014</time>
+                <div class="experience">
+                  <span class="circle"></span>
+                  <div class="experience-img"><img src="{{site_url}}/img/pmg.jpg" alt=""></div>
+                  <div class="experience-info clear-after">
+                    <h5>Postema Marketing Group</h5>
+                    <div class="role">Webmaster - IT</div>
+                    <p>July 2012 – July 2014 </p>
+                  </div><!-- experience-info -->
+                </div><!-- experience -->
+              </div><!-- year -->
+              <div class="year">
+                <time datetime="2012">2012</time>
+                <div class="experience">
+                  <span class="circle"></span>
+                  <div class="experience-img"><img src="{{site_url}}/img/intellishop.jpg" alt=""></div>
+                  <div class="experience-info clear-after">
+                    <h5>IntelliShop</h5>
+                    <div class="role">Proofreader</div>
+                    <p>June 2009 – July 2012 </p>
+                  </div><!-- experience-info -->
+                </div><!-- experience -->
+              </div><!-- year -->
+            </div><!-- timeline -->
+          </div>
+        </section>
+
+        {% include contact_form.html %}
+
+        <section class="row section">
+          <div class="map" id="map_1" data-maplat="41.374774" data-maplon="-83.651323" data-mapzoom="5" data-color="aqua" data-height="22.222" data-img="img/marker.png" data-info="&hearts; from Ohio"></div>
+        </section>
+
+      </div><!-- id-main -->
+    </main><!-- main -->
+
+    {% include footer.html %}
+
+    {% include footer_scripts.html %}
+
+  </body>
+
+</html>

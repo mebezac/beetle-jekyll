@@ -16,40 +16,7 @@
 
       <div id="main">
 
-        <section class="row section">
-          <div class="row-content buffer even clear-after">
-            <div class="section-title"><h3>Contact Me</h3></div>
-            {{ content }}
-            <div class="column nine">
-              <form action="https://getsimpleform.com/messages?form_api_token=1c93111fe4061616fa11a139de620a51" method="post" id="contact-form" class="contact-section">
-                <!-- all your input fields here.... -->
-                <span class="pre-input"><i class="icon icon-user"></i></span>
-                <input class="name plain buffer" type="text" name="name" placeholder="Full name">
-                <span class="pre-input"><i class="icon icon-email"></i></span>
-                <input class="email plain buffer" type="email" name="email" placeholder="Email address">
-                <textarea class="plain buffer" name="message" placeholder="Type your message here"></textarea>
-                <input type='submit' id="send" class="plain button red" type="button" value="Send a Message" />
-              </form>
-              <div id="success"></div>
-            </div>
-            <div class="column three last">
-              <div class="widget">
-                <h4>Location</h4>
-                <p>
-                  Ohio,<br>
-                  USA
-                </p>
-              </div>
-              <div class="widget">
-                <h4>Connect</h4>
-                <ul class="inline meta-social">
-                  {% if site.owner.twitter %} <li><a href="https://twitter.com/{{ site.owner.twitter }}" class="twitter-share border-box" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li> {% endif %}
-                  {% if site.owner.github %} <li><a href="https://github.com/{{site.owner.github}}" class="github-share border-box" target="_blank"><i class="fa fa-github fa-lg"></i></a></li> {% endif %}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+        {% include contact_form.html %}
 
       </div><!-- id-main -->
     </main><!-- main -->
