@@ -1,6 +1,7 @@
 ---
 layout: resume
 permalink: /resume/index.html
+title: 'resume'
 skill_1: 'Test Driven Development'
 skill_1_amount: 85
 skill_2: 'Front-end'
