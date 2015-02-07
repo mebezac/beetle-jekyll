@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body class="blog list-style">
+
+    {% include navbar.html %}
+
+    <main role="main">
+      <div id="intro-wrap"  data-height="22.222">
+        <div id="intro" class="preload darken">
+          <div class="intro-item" style="background-image: url(http://placehold.it/1800x600/ddd/fff&text=Beetle%20image);">
+            <div class="caption">
+              <h2>Stories I Tell</h2>
+              <p>The universe is made of stories, not of atoms.</p>
+            </div><!-- caption -->
+          </div><!-- intro -->
+        </div><!-- intro -->
+      </div><!-- intro-wrap -->
+
+      <div id="main" class="row">
+        <div class="row-content buffer-left buffer-right buffer-bottom clear-after">
+          <div class="column twelve">
+            {% for post in paginator.posts %}
+              {% include post-list-item.html %}
+            {% endfor %}
+            <div id="pagination">
+              <ul class="clear-after reset plain">
+                {% if paginator.next_page %}
+                  <li id="older" class="pagination-nav"><a href="{{ paginator.next_page_path }}" class="button transparent aqua"><i class="fa fa-chevron-left"></i><span class="label">Older</span></a></li>
+                {% endif %}
+                {% if paginator.previous_page %}
+                  <li id="newer" class="pagination-nav"><a href="{{ paginator.previous_page_path }}" class="button transparent aqua"><span class="label">Newer</span><i class="fa fa-chevron-right"></i></a></li>
+                {% endif %}
+              </ul>
+            </div>
+          </div><!-- column twelve -->
+
+        </div><!-- row-content -->
+      </div><!-- row -->
+    </main><!-- main -->
+
+    {% include footer.html %}
+
+    {% include footer_scripts.html %}
+
+  </body>
+
+</html>

@@ -37,9 +37,13 @@
 				<div class="row-content buffer-left buffer-right buffer-bottom">
 					<div id="post-nav">
 						<ul class="clear-after reset plain">
-							<li id="prev-items" class="post-nav"><a href="#"><i class="fa fa-chevron-left"></i><span class="label">Prev</span></a></li>
-							<li id="all-items" class="post-nav"><a href="#"><i class="icon icon-images"></i></a></li>
-							<li id="next-items" class="post-nav"><a href="#"><span class="label">Next</span><i class="fa fa-chevron-right"></i></a></li>
+							{% if page.previous.url %}
+								<li id="prev-items" class="post-nav"><a href="{{page.previous.url}}"><i class="fa fa-chevron-left"></i><span class="label">Prev</span></a></li>
+							{% endif %}
+							<li id="all-items" class="post-nav"><a href="{{site_url}}/blog"><i class="icon icon-images"></i></a></li>
+							{% if page.next.url %}
+								<li id="next-items" class="post-nav"><a href="{{page.next.url}}"><span class="label">Next</span><i class="fa fa-chevron-right"></i></a></li>
+							{% endif %}
 						</ul>
 					</div>
 

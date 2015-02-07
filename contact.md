@@ -1,6 +1,6 @@
 ---
 layout: contact
-permalink: /contact.html
+permalink: /contact/index.html
 ---
 
 I’m a full-stack Ruby on Rails developer constantly looking to improve and share what I find along the way.<br />
