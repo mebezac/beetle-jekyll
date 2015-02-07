@@ -7,10 +7,8 @@ tags: []
 excerpt: So, now that I'm done learning how to build Rails apps, it's time to use my knowledge to build some real applications. The first project I've chosen to work on is called That Don't Suck. Basically, the idea for the website is a community of people that help each other find things that don't suck.
 type: post
 published: true
-meta:
-  dsq_thread_id: '2645642341'
 image:
-  feature:
+  feature: pat.jpg
   teaser: tds-teaser.png
   thumb:
 ---

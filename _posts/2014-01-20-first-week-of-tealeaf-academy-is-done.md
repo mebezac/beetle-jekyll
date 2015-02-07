@@ -6,7 +6,7 @@ categories:
 excerpt: So I just finished up the last exercises for Pine's book <em>Learn to Program</em>. This was part of the curriculum for the first week of Tealeaf Academy's Introduction to Ruby and Web Development course.
 tags: []
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 date: 2014-01-20T17:50:56-05:00

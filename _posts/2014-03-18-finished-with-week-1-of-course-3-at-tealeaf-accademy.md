@@ -6,7 +6,7 @@ categories:
 excerpt: So it took a little longer than a week, but I have finished up the first "week" of course 3 at Tealeaf. This course focuses on Test Driven Development (TDD) and the main project is building a NetFlix clone.
 tags: []
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 date: 2014-03-18T13:21:55-05:00

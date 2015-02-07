@@ -8,9 +8,8 @@ excerpt: It's crazy to think about it, but I only have 2 weeks left until I'm do
 type: post
 published: true
 meta:
-  dsq_thread_id: '2616536821'
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 ---

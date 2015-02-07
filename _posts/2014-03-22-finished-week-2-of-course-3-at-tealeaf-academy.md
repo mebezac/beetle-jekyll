@@ -6,7 +6,7 @@ categories:
 excerpt: This week was really great for me. I think I am really starting to get the hang of the testing process and test driven design. In the first week and for most the of the first half of this week, I had to kind of hobble along, not writing much code before taking a look at the solution videos. I had an idea of what I needed to do, but I didn't really know exactly how to do it.
 tags: []
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 date: 2014-03-22T09:31:15-05:00

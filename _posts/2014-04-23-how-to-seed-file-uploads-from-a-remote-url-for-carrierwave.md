@@ -8,9 +8,8 @@ excerpt: I recently deployed an app to Heroku. It's a Netflix clone called MyFli
 type: post
 published: true
 meta:
-  dsq_thread_id: '2632974204'
 image:
-  feature:
+  feature: seed.jpg
   teaser: upload.png
   thumb:
 ---

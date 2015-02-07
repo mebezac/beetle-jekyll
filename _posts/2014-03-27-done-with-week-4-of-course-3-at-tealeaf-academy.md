@@ -8,9 +8,8 @@ excerpt: We covered a whole lot this week, I learned quite a few new things. A f
 type: post
 published: true
 meta:
-  dsq_thread_id: '2526847121'
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 ---

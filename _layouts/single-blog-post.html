@@ -8,30 +8,17 @@
 		{% include navbar.html %}
 
 		<main role="main">
-			<div id="intro-wrap">
-				<div id="intro" class="preload darken" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fade">
-					<div class="intro-item" style="background-image: url(http://placehold.it/1800x600/ddd/fff&text=Beetle%20image);">
-						<div class="photocaption">
-							<h4>Photography by <a href="http://danielezedda.com/">Daniele Zedda</a></h4>
-						</div><!-- photocaption -->
-					</div>
-					<div class="intro-item" style="background-image: url(http://placehold.it/1800x600/ddd/fff&text=Beetle%20image);">
-						<div class="photocaption">
-							<h4>Photography by <a href="http://danielezedda.com/">Daniele Zedda</a></h4>
-						</div><!-- photocaption -->
-					</div>
-					<div class="intro-item" style="background-image: url(http://placehold.it/1800x600/ddd/fff&text=Beetle%20image);">
-						<div class="photocaption">
-							<h4>Photography by <a href="http://danielezedda.com/">Daniele Zedda</a></h4>
-						</div><!-- photocaption -->
-					</div>
-					<div class="intro-item" style="background-image: url(http://placehold.it/1800x600/ddd/fff&text=Beetle%20image);">
-						<div class="photocaption">
-							<h4>Photography by <a href="http://danielezedda.com/">Daniele Zedda</a></h4>
-						</div><!-- photocaption -->
-					</div>
-				</div><!-- intro -->
-			</div><!-- intro-wrap -->
+			{% if page.image.feature %}
+				<div id="intro-wrap">
+	        <div id="intro" class="preload darken more-button">
+	          <div class="intro-item" style="background-image: url({{site_url}}/img/{{page.image.feature}});">
+	            <div class="caption">
+	              <h2>{{page.title}}</h2>
+	            </div><!-- caption -->
+	          </div>
+	        </div><!-- intro -->
+	      </div><!-- intro-wrap -->
+	    {% endif %}
 
 			<div id="main" class="row">
 				<div class="row-content buffer-left buffer-right buffer-bottom">
@@ -56,48 +43,24 @@
 
 					</div><!-- post-area -->
 
-					<div class="meta-social">
-						<ul class="inline center">
-							<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-							<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-							<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
-						</ul>
-					</div>
+					{% include social_share_buttons.html %}
 
 					{% include comments.html %}
 
 					<div class="related clear-after">
-						<h4>Related Posts</h4>
-						<div class="item">
-							<figure><img src="http://placehold.it/600x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-							<a class="overlay" href="#">
-								<div class="overlay-content">
-									<div class="post-type"><i class="icon icon-search"></i></div>
-									<h2>Spicemode</h2>
-									<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div><!-- overlay-content -->
-							</a><!-- overlay -->
-						</div>
-						<div class="item">
-							<figure><img src="http://placehold.it/600x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-							<a class="overlay" href="#">
-								<div class="overlay-content">
-									<div class="post-type"><i class="icon icon-search"></i></div>
-									<h2>In the end</h2>
-									<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div><!-- overlay-content -->
-							</a><!-- overlay -->
-						</div>
-						<div class="item last">
-							<figure><img src="http://placehold.it/600x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-							<a class="overlay" href="#">
-								<div class="overlay-content">
-									<div class="post-type"><i class="icon icon-search"></i></div>
-									<h2>Moove</h2>
-									<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div><!-- overlay-content -->
-							</a><!-- overlay -->
-						</div>
+						<h4>Recent Posts</h4>
+						{% for post in site.posts limit:3 %}
+							<div class="item {% if forloop.index == 3 %}last{% endif %}">
+								<figure><img src="{{ site.url }}/img/{{ post.image.teaser }}" alt=""></figure>
+								<a class="overlay" href="{{ site.url }}{{ post.url }}">
+									<div class="overlay-content">
+										<div class="post-type"><i class="icon icon-doc"></i></div>
+										<h2>{{ post.title }}</h2>
+										<p>{{ post.excerpt | truncate: 160 }}</p>
+									</div><!-- overlay-content -->
+								</a><!-- overlay -->
+							</div>
+						{% endfor %}
 					</div>
 
 

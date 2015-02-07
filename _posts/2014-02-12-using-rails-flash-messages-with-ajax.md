@@ -6,7 +6,7 @@ categories:
 excerpt: Ok, so I probably spent a little too much time working on this, but I really wanted to make it work and make it work on my own.
 tags: []
 image:
-  feature:
+  feature: flash.jpg
   teaser: flash-messages.png
   thumb:
 date: 2014-02-12T15:51:30-05:00

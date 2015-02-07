@@ -8,9 +8,8 @@ excerpt: As I race towards the end of the last of Tealeaf's courses (only 1 week
 type: post
 published: true
 meta:
-  dsq_thread_id: '2619652038'
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 ---

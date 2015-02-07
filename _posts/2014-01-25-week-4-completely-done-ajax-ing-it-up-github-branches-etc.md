@@ -6,7 +6,7 @@ categories:
 excerpt: So I'm completely done with the fourth and final week of the first Tealeaf session - Introduction to Ruby and Web Development. I think I can honestly say that I have learned more this month than in all of the previous months trying to learn on my own. Tealeaf is the perfect balance of guided instruction and self-learning. I didn't have to quit my job and move across the country to do it and because I had time, I could work ahead and catch up with the suggested pace.
 tags: []
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 date: 2014-01-25T17:36:44-05:00

@@ -6,7 +6,7 @@ categories:
 excerpt: So I'm playing catch up a bit at Tealeaf Academy. I originally signed up to do the pre-course work in January and then join the February session. I got the pre-course work done so I just decided to jump in with the January session (but be a few weeks behind).
 tags: []
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 date: 2014-01-21T17:09:30-05:00

@@ -8,9 +8,8 @@ excerpt: The first part of this week basically dealt with refactoring RSpec code
 type: post
 published: true
 meta:
-  dsq_thread_id: '2515247657'
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 ---

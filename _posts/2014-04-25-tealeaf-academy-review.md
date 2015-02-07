@@ -9,7 +9,7 @@ type: post
 published: true
 meta:
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 ---

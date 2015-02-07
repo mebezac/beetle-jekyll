@@ -8,9 +8,8 @@ status: publish
 type: post
 excerpt: I just finished up week 5 of the 3rd course at Tealeaf Academy. This week didn't focus on as many new features as the previous weeks. We added the ability to invite a friend to join the site (We are working on a NetFlix clone). When the inviter invites a friend, the friend receives an email with a link that has a unique token. That token lets us look up the invitation and prefill the email address portion of the registration form. If the friend who was invited accepts and registers for the site using that url with their token in it, they are set up automatically to be following the person they accepted the invitation from and the person who invited them is also automatically following them.
 meta:
-  dsq_thread_id: '2601550271'
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 ---

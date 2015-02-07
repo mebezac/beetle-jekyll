@@ -6,7 +6,7 @@ categories:
 excerpt: So, I just wrapped up my Blackjack web app. You can play it here <a href="http://zacjack.herokuapp.com" target="_blank">http://zacjack.herokuapp.com</a>. I'm pretty proud of the little UI I came up with, including the scoreboard. I would definitely not consider myself a CSS expert, but I think I did a fairly good job.
 tags: []
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 date: 2014-01-24T16:32:37-05:00

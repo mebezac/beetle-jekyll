@@ -7,10 +7,8 @@ tags: []
 excerpt: Today I finished up the last of the assignments for Tealeaf Academy. We wrapped up our Netflix clone by giving the admin the ability to view payments and locking users out if their payment failed. I got to use a few new tools such as webhooks and ngrok.
 type: post
 published: true
-meta:
-  dsq_thread_id: '2628632961'
 image:
-  feature:
+  feature: tealeaf.png
   teaser: tealeaf-academy-logo.png
   thumb:
 ---
