@@ -1986,7 +1986,7 @@ section.greyish {
 
 .contact-section input[type="submit"],
 .comment-form input[type="submit"] {
-    float: right;
+    float: left;
 }
 
 
