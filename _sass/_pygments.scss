@@ -11,9 +11,9 @@
 
 .highlight {
 	margin-bottom: 1.5em;
-	@include font-size(14);
+	font-size: 14;
 	color: #d0d0d0;
-	border: 1px solid darken($body-color, 5);
+	border: 1px solid darken(#ebebeb, 5);
 	background-color: #272822;
 	pre {
 		position: relative;
@@ -21,7 +21,7 @@
 		padding: 1em;
 	}
 	&:hover {
-		border: 1px solid $form-border-color-hover;
+		border: 1px solid darken(#ddd, 10);
 	}
 }
 
