@@ -2,7 +2,7 @@
 title: "Export CSV and Attach to Model With Paperclip"
 date: 2015-03-22T21:53:44-04:00
 layout: single-blog-post
-excerpt:
+excerpt: From time to time, users will want export their data from your app. An easy way to do that is to build a CSV (comma separated values) file and then let them download it. I'll show you how build that CSV and then attach to a model with Paperclip
 published: true
 image:
   feature: post-images/csv.jpg
