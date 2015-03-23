@@ -1,0 +1,10 @@
+---
+title: {{ title }}
+date: {{ date }}
+layout: single-blog-post
+excerpt:
+published: true
+image:
+  feature: post-images/
+  teaser: post-images/
+---
