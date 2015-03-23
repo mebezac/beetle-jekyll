@@ -46,9 +46,9 @@ def perform(foo, options = {})
     end
 
     file = StringIO.new(csv.string)
-    foo.last_csv = file
-    foo.last_csv.instance_write(:content_type, 'text/csv')
-    foo.last_csv.instance_write(:file_name, make_filename(foo))
+    foo.csv = file
+    foo.csv.instance_write(:content_type, 'text/csv')
+    foo.csv.instance_write(:file_name, make_filename(foo))
     foo.save!
 
   end
@@ -59,9 +59,9 @@ The first part of that method generates the CSV, which is really just a big stri
 
 {% highlight ruby %}
 file = StringIO.new(csv.string)
-foo.last_csv = file
-foo.last_csv.instance_write(:content_type, 'text/csv')
-foo.last_csv.instance_write(:file_name, make_filename(foo))
+foo.csv = file
+foo.csv.instance_write(:content_type, 'text/csv')
+foo.csv.instance_write(:file_name, make_filename(foo))
 foo.save!
 {% endhighlight %}
 
@@ -74,7 +74,7 @@ class FoosController < ApplicationController
   def download_csv
     foo = Foo.find(params[:id])
     data = open(foo.csv.url)
-    send_data data.read, filename: "#{foo.last_csv_file_name}", type: "text/csv", disposition: 'attachment'
+    send_data data.read, filename: "#{foo.csv_file_name}", type: "text/csv", disposition: 'attachment'
   end
 end
 {% endhighlight %}
