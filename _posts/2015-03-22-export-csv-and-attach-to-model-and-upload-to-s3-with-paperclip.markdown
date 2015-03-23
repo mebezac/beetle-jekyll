@@ -1,5 +1,5 @@
 ---
-title: "Export CSV and Attach to Model and Upload to S3 With Paperclip"
+title: "Export CSV and Attach to Model With Paperclip"
 date: 2015-03-22T21:53:44-04:00
 layout: single-blog-post
 excerpt:
